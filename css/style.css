@@ -1,0 +1,165 @@
+@font-face {
+  font-family: SFPixelate;
+  src: url("../font/SFPixelate.ttf");
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "SFPixelate", sans-serif;
+  color: #777;
+  scroll-behavior: smooth;
+  
+}
+
+.text-content {
+  padding: 50px 80px 50px 80px;
+  text-align: justify;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
+}
+
+.text-shadow {
+  text-shadow: -2px -2px #129dce, 2px -2px #129dce, -2px 2px #129dce, 2px 2px #129dce;
+}
+
+.caption-title {
+  position: relative;
+  opacity: 0.65;
+  height: 100%;
+  transform: translateZ(0px) scale(1);
+}
+
+a {
+  font: 400 22px/1.8 "SFPixelate", sans-serif;
+  color: #fff;
+}
+
+.darkify-background {
+  opacity: 0.40;
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/pattern.jpg');
+  background-repeat: repeat;
+  z-index: 2;
+}
+
+.parallax-1-layer-0, .parallax-2-layer-0 {
+  position: relative;
+  opacity: 1.0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  min-height: 800px;
+  min-width: 100%;
+  left: 0;
+  top: 150px;
+  text-align: center;
+  color: #000;
+}
+
+.parallax-1-layer-0 {
+  background-image: url("../img/parallax-1-layer-0.jpg");
+}
+
+.parallax-2-layer-0 {
+  background-image: url("../img/parallax-2-layer-0.jpg");
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #ffe495;
+  padding: 18px;
+  font-size: 40;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 25px "SFPixelate", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .parallax-1-layer-0, .parallax-2-layer-0 {
+    background-attachment: scroll;
+  }
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.parallax-0-layer-0 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(-1px) scale(2.1);
+}
+.parallax-0-layer-1 {
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-2px) scale(3.1);
+}
+.parallax-0-layer-2 {
+  -webkit-transform: translateZ(-2px);
+  transform: translateZ(-3px) scale(4.1);
+}
+
+.parallax-0-layer-3 {
+  -webkit-transform: translateZ(-3px);
+  transform: translateZ(-4px) scale(5.1);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+/* add some padding to force scrollbars */
+.parallax-layer {
+  padding: 50vh 0;
+}
+
+/* centre the content in the parallax layers */
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.cover {
+  color: #777;
+  background-color:white;
+  text-align: justify;
+  position: relative;
+  top: 150px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 6px 6px 10px 10px rgba(0, 0, 0, 0.19);
+
+  z-index: 1;
+}
