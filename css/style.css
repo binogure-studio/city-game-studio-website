@@ -9,6 +9,7 @@ body {
   background-color: #0094C8;
   font: 400 15px/1.8 "SFPixelate", sans-serif;
   color: #777;
+  overflow-x: hidden;  
 }
 
 .text-content {
