@@ -3,13 +3,12 @@
   src: url("../font/SFPixelate.ttf");
 }
 
-body, html {
-  height: 100%;
+body {
+  padding: 0;
   margin: 0;
+  background-color: #0094C8;
   font: 400 15px/1.8 "SFPixelate", sans-serif;
   color: #777;
-  scroll-behavior: smooth;
-  
 }
 
 .text-content {
@@ -26,10 +25,12 @@ body, html {
 }
 
 .caption-title {
-  position: relative;
+  position: absolute;
+  top: 60%;
   opacity: 0.65;
-  height: 100%;
+  width: 100%;
   transform: translateZ(0px) scale(1);
+  z-index: 2;
 }
 
 a {
@@ -58,7 +59,7 @@ a {
   min-height: 800px;
   min-width: 100%;
   left: 0;
-  top: 150px;
+  top: 50px;
   text-align: center;
   color: #000;
 }
@@ -72,10 +73,9 @@ a {
 }
 
 .caption {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 50%;
-  width: 100%;
   text-align: center;
   color: #000;
 }
@@ -95,6 +95,12 @@ h3 {
   color: #111;
 }
 
+#parallax {
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .parallax-1-layer-0, .parallax-2-layer-0 {
@@ -102,46 +108,46 @@ h3 {
   }
 }
 
-.parallax {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 1px;
-  perspective: 1px;
+@media only screen and (max-width: 768px) {
+  #parallax {
+    display: none;
+  }
+  #parallax-mobile {
+    display: block;
+  }
 }
+
+#parallax-mobile {
+  display: none;
+  background: url("../img/parallax-0-layer-0-mobile.png") no-repeat center bottom / cover;
+  height: 320px;
+}
+
+#parallax, .parallax-layer {
+  min-height: 800px;
+}
+
 .parallax-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.parallax-0-layer-0 {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(-1px) scale(2.1);
-}
-.parallax-0-layer-1 {
-  -webkit-transform: translateZ(-1px);
-  transform: translateZ(-2px) scale(3.1);
-}
-.parallax-0-layer-2 {
-  -webkit-transform: translateZ(-2px);
-  transform: translateZ(-3px) scale(4.1);
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1080px;
+  position: fixed;
+  z-index: -1;
 }
 
-.parallax-0-layer-3 {
-  -webkit-transform: translateZ(-3px);
-  transform: translateZ(-4px) scale(5.1);
+.layer-bg {
+  background-image: url('../img/parallax-0-layer-3.png');
 }
-
-* {
-  margin:0;
-  padding:0;
+.layer-1 {
+  background-image: url('../img/parallax-0-layer-2.png');
 }
-
-/* add some padding to force scrollbars */
-.parallax-layer {
-  padding: 50vh 0;
+.layer-2 {
+  background-image: url('../img/parallax-0-layer-1.png');
+}
+.layer-overlay {
+  background-image: url('../img/parallax-0-layer-0.png');
 }
 
 /* centre the content in the parallax layers */
@@ -158,7 +164,7 @@ h3 {
   background-color:white;
   text-align: justify;
   position: relative;
-  top: 150px;
+  top: 50px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 6px 6px 10px 10px rgba(0, 0, 0, 0.19);
 
   z-index: 1;
