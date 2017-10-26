@@ -13,9 +13,26 @@ body {
 }
 
 .text-content {
-  padding: 50px 80px 50px 80px;
+  padding: 20px 80px 20px 80px;
   text-align: justify;
   max-width: 1920px;
+  width: 100%;
+}
+
+.text-color {
+  color:#ddd;
+  background-color:#0094c8;
+}
+
+.no-max-width {
+  max-width: none;
+}
+
+.social-icons {
+  height: 84px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .center-div {
