@@ -35,7 +35,6 @@ body {
 .caption-title {
   position: absolute;
   top: 60%;
-  opacity: 0.65;
   width: 100%;
   transform: translateZ(0px) scale(1);
   z-index: 2;
@@ -124,6 +123,9 @@ h3 {
   }
   #parallax-mobile {
     display: block;
+  }
+  #parallax-title {
+    display: none;
   }
 }
 
