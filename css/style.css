@@ -32,7 +32,7 @@ body {
   height: 84px;
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .center-div {
