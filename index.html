@@ -34,7 +34,7 @@
         You will have to turn to video game editors who will carve out the lion's share. Chaining successes is the only way of getting rid of publishers.
         Furthermore you will be able to publish your own publishing contracts. You will then be ready to dominate the market and buy back your competitors.</p>
       <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TZBGFfYSgW0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="" data-src="https://www.youtube.com/embed/TZBGFfYSgW0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
       </center>
       </div>
     </div>
@@ -80,6 +80,17 @@
   </div>
 
   <script type="text/javascript">
+    function init() {
+      var vidDefer = document.getElementsByTagName('iframe');
+      for (var i=0; i<vidDefer.length; i++) {
+        if(vidDefer[i].getAttribute('data-src')) {
+          vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+        }
+      }
+    }
+    
+    window.onload = init;
+
     window.addEventListener('scroll', function(event) {
       var depth, i, layer, layers, len, movement, topDistance, translate3d;
       topDistance = this.pageYOffset;
