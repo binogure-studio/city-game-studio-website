@@ -10,12 +10,12 @@ html {
 
 @font-face {
   font-family: PT Sans Bold;
-  src: url("../font/PT_Sans-Narrow-Web-Bold.ttf");
+  src: url("../font/SFPixelate-Bold.ttf");
 }
 
 @font-face {
   font-family: PT Sans;
-  src: url("../font/PT_Sans-Narrow-Web-Regular.ttf");
+  src: url("../font/SFPixelate.ttf");
 }
 
 *,
@@ -38,7 +38,7 @@ body {
 html {
   color: #444444;
 
-  font: 62.5%/1.6 "PT Sans", Arial, Helvetica, sans-serif;
+  font: 45.0%/1.6 "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 body {
