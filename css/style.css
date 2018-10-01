@@ -111,7 +111,7 @@ a {
 }
 
 .parallax {
-  height: 850px;
+  height: 640px;
   overflow: hidden;
   position: relative;
 }
@@ -128,7 +128,7 @@ a {
   background-repeat: no-repeat;
   width: 100%;
   max-width: 1280px;
-  height: 1080px;
+  height: 720px;
   position: fixed;
   z-index: -1;
 }
