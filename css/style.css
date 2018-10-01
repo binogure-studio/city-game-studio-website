@@ -6,21 +6,46 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #0094C8;
+  background-color: #e6f8ff;
   font: 400 15px/1.8 "SFPixelate", sans-serif;
-  color: #777;
-  overflow-x: hidden;  
+  color: #e6f8ff;
+  overflow-x: hidden;
+}
+
+.title, .big-text, .text-content {
+  padding: 5px 80px 5px 80px;
+  text-align: justify;
 }
 
 .text-content {
-  padding: 20px 80px 20px 80px;
-  text-align: justify;
-  max-width: 1920px;
-  width: 100%;
+  font-size: 17px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.social-icon {
+  width: 64px;
+}
+
+.big-text {
+  font-size: 26px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.title, .subtitle {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .text-color {
-  color:#ddd;
   background-color:#0094c8;
 }
 
@@ -33,44 +58,33 @@ body {
   width: 50%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
 .center-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.box-shadow {
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
-}
-
-.text-shadow {
-  text-shadow: -2px -2px #129dce, 2px -2px #129dce, -2px 2px #129dce, 2px 2px #129dce;
-}
-
-.caption-title {
-  position: absolute;
-  top: 60%;
-  width: 100%;
-  transform: translateZ(0px) scale(1);
-  z-index: 2;
+.button {
+  display: inline-block;
+  font-variant: small-caps;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #e6f8ff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #e2c87d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 6px;
+  border-bottom: 3px solid #ad891e;
 }
 
 a {
   font: 400 22px/1.8 "SFPixelate", sans-serif;
-  color: #fff;
-}
-
-.darkify-background {
-  opacity: 0.40;
-  width: 100%;
-  height: 100%;
-  min-height: 800px;
-  min-width: 100%;
-  background-image: url('../img/pattern.jpg');
-  background-repeat: repeat;
-  z-index: 2;
 }
 
 .parallax-1-layer-0, .parallax-2-layer-0 {
@@ -82,12 +96,10 @@ a {
   background-size: cover;
 
   width: 100%;
-  min-height: 800px;
   min-width: 100%;
   left: 0;
   top: 0px;
   text-align: center;
-  color: #000;
 }
 
 .parallax-1-layer-0 {
@@ -98,52 +110,10 @@ a {
   background-image: url("../img/parallax-2-layer-0.png");
 }
 
-.caption {
-  position: relative;
-  left: 0;
-  top: 50%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #ffe495;
-  padding: 18px;
-  font-size: 40;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 25px "SFPixelate", sans-serif;
-  color: #111;
-}
-
-#parallax {
-  height: 1080px;
+.parallax {
+  height: 850px;
   overflow: hidden;
   position: relative;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .parallax-1-layer-0, .parallax-2-layer-0 {
-    background-attachment: scroll;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #parallax {
-    display: none;
-  }
-  #parallax-mobile {
-    display: block;
-  }
-  #parallax-title {
-    display: none;
-  }
 }
 
 #parallax-mobile {
@@ -152,15 +122,12 @@ h3 {
   height: 320px;
 }
 
-#parallax, .parallax-layer {
-  min-height: 800px;
-}
-
 .parallax-layer {
   background-position: bottom center;
   background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 1280px;
   height: 1080px;
   position: fixed;
   z-index: -1;
@@ -175,26 +142,312 @@ h3 {
 .layer-2 {
   background-image: url('../img/parallax-0-layer-1.png');
 }
-.layer-overlay {
+.layer-3 {
   background-image: url('../img/parallax-0-layer-0.png');
 }
-
-/* centre the content in the parallax layers */
-.title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.layer-4 {
+  background-image: url('../img/parallax-0-layer-4.png');
 }
+
 .cover {
-  color: #777;
-  background-color:white;
+  background-color: #0094c8;
   text-align: justify;
   position: relative;
-  top: 0px;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 6px 6px 10px 10px rgba(0, 0, 0, 0.19);
 
   z-index: 1;
 }
+
+.content {
+  width: 100%;
+  max-width: 1280px;
+  overflow-x: hidden;
+}
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:rgba(0,0,0,0.3);
+  z-index: 5;
+  overflow: hidden;
+  text-decoration: none;
+}
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 0px 24px;
+  text-decoration: none;
+}
+.topicon {
+  height: 48px;
+  padding: 14px 24px;
+}
+
+#cgs-logo {
+  opacity: 0.0;
+  transition: opacity .3s ease-in-out;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-right a {
+  transition: background .5s ease-in-out;
+}
+
+.topnav-right a:hover {
+  background: #0094c8;
+}
+
+.divTable{
+	display: table;
+  width: 90%;
+  text-align: center;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 0px;
+	display: table-cell;
+	padding: 12px 10px;
+}
+.divTableHeading {
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  max-width: 95%;
+}
+.video-responsive iframe,  
+.video-responsive object,  
+.video-responsive embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.shadow {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery .divTableCell {
+  margin: 0px;
+  padding: 0px;
+}
+
+.padit {
+  padding: 50px 50px 50px 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.newsletter-description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+
+.newsletter-input {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+}
+
+
+.newsletter-button {
+  height: 44px;
+  border: none;
+}
+
+.newsletter-email {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: grey;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-confirm {
+  margin-top: 24px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.newsletter-submit {
+  width: 25%;
+  height: 46px;
+  background: #e2c87d;
+  color: #ad891e;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+  
+.newsletter-submit:hover {
+  background: #ffe495;
+} 
+
+.newsletter-submit:disabled {
+  background: lightgray;
+  color: grey;
+} 
+
+.newsletter-input:focus {
+  box-shadow: 0px 0px 8px grey;
+}
+
+.footer {
+  width: 100%;
+  background-color: #393e46;
+  z-index: 3;
+  min-height: 220px;
+  font-size: 26px;
+  font-weight: 600; 
+}
+
+.footnav-center {
+  margin: auto;
+}
+
+.copyright {
+  color: gray;
+  font-size: 14px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.footer a:link,.footer a:visited,.footer a:active {
+  color: gray;
+}
+
+.footer a:hover {
+  color: black;
+}
+
+.caps {
+  text-transform: uppercase; 
+}
+
+
+.binogure-logo {
+  width: 256px;
+}
+
+@media only screen and (max-width: 800px) {
+  .newsletter-confirm {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+
+  .newsletter-description {
+    font-size: 8px;
+  }
+
+  .text-content {
+    font-size: 17px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .big-text {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .text-content {
+    font-size: 10px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  a {
+    font: 300 12px/1.8 "SFPixelate", sans-serif;
+  }
+
+  .binogure-logo {
+    width: 96px;
+  }
+  
+  .padit, .title, .big-text, .text-content {
+    padding: 2px 2px 2px 2px;
+  }
+
+  .topnav {
+    padding: 0 5px;
+  }
+
+  .layer-4 {
+    opacity: 0;
+  }
+
+  .topicon {
+    height: 24px;
+    padding: 4px 0px;
+  }
+
+  .social-icons {
+    height: 60px;
+  }
+
+  .social-icon {
+    width: 32px;
+    padding: 12px;
+  }
+
+  #cgs-logo {
+    opacity: 1.0;
+  }
+}
+
