@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -102,11 +102,11 @@
       <div class="padit divTable center-div">
         <div class="divTableBody">
           <div class="divTableRow">
-            <div class="divTableCell text-content">
+            <div class="divTableCell text-content column-2">
               January 1975, you have created your video game company. You are renting a tight place that allows you to
               develop your first game. Quickly, your games are successful and you already have to move,
             </div>
-            <div class="divTableCell text-content">
+            <div class="divTableCell text-content column-2">
               but it is up to
               you to cross the city to pick up your next local. In the blink of an eye you are hiring artists to
               improve
@@ -220,7 +220,44 @@
     </div>
   </div>
 
+  <!-- The Modal -->
+  <div id="modal-gallery" class="modal">
+    <img class="modal-content" id="modal-image" />
+  </div>
+
   <script type="text/javascript">
+
+    // Get the modal
+    var skipEvent = false
+    var modal = document.getElementById('modal-gallery')
+    var modalImg = document.getElementById("modal-image")
+    var galleryNodes =  document.querySelectorAll('.gallery img')
+    var currentGalleyIndex = 0
+    
+    for (var index = 0; index < galleryNodes.length; ++index) {
+      galleryNodes[index].onclick = (function(savedIndex) {
+        currentGalleryIndex = savedIndex
+
+        modal.style.display = "block"
+        modalImg.src = galleryNodes[savedIndex].src
+      }).bind(document, index)
+    }
+
+    modal.onclick = function() {
+      if (!skipEvent) {
+        modal.style.display = "none";
+      }
+
+      skipEvent = false
+    }
+
+    modalImg.onclick = function() {
+      skipEvent = true
+
+      currentGalleryIndex = (currentGalleryIndex + 1) % galleryNodes.length
+      
+      modalImg.src = galleryNodes[currentGalleryIndex].src
+    }
 
     function updateCGSLogo() {
       if (this.pageYOffset > 800 || window.innerWidth < 800) {
