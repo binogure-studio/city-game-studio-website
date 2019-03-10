@@ -281,13 +281,11 @@ a {
   margin: -2px 0 45px;
 }
 
-
 .newsletter-input {
   display: flex;
   align-items: center;
   max-width: 450px;
 }
-
 
 .newsletter-button {
   height: 44px;
@@ -511,4 +509,8 @@ a {
 @keyframes zoom {
   from {transform:scale(0.8)} 
   to {transform:scale(1)}
+}
+
+#steam-img {
+  width: 96px;
 }
