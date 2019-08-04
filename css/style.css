@@ -385,15 +385,15 @@ a {
   }
 
   .copyright {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .newsletter-description {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .text-content {
-    font-size: 17px;
+    font-size: 16px;
   }
   
   .title {
@@ -402,17 +402,17 @@ a {
   }
   
   .big-text {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
   }
   
   .subtitle {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
 
   .text-content {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .footer {
