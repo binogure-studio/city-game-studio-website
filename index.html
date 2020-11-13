@@ -186,12 +186,11 @@
         Build video games studio, research new technologies, create outstanding games in City Game Studio - A business
         tycoon game where you replay the history of the gaming industry.        
       </h2>
-
+      <div id="rss-feeds"></div>
       <div class='video-responsive center-div shadow'>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/4Wz-uCZd6EE?rel=0&amp;controls=1&amp;showinfo=0"
           frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
       </div>
-
       <div class="padit divTable center-div">
         <div class="divTableBody">
           <div class="divTableRow">
@@ -330,6 +329,33 @@
   </div>
 
   <script type="text/javascript" src="js/interface.js"></script>
+  <script src="js/rss.global.min.js"></script>
+  <script src="js/rss.node.min.js"></script>
+  <script>
+    window.onload = function() {
+      new RSS(
+        document.querySelector("#rss-feeds"),
+        "https://store.steampowered.com/feeds/newshub/app/726840/?l=english", {
+          layoutTemplate: "{entries}",
+          entryTemplate:
+              `<div class="rss-entry">
+                <a href={url}>
+                  <div class="rss-container">
+                    <div class="rss-left">
+                      <div class="rss-title">{title}</div>
+                      <div class="rss-date">{date}</div>
+                      <div class="rss-content">{shortBodyPlain}...</div>
+                    </div>
+                    <div class="rss-right">
+                      {teaserImage}
+                    </div>
+                  </div>
+                </a>
+              </div>`
+        }
+      ).render();
+    };
+  </script>
 </body>
 
 </html>

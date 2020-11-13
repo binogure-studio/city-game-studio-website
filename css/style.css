@@ -514,3 +514,94 @@ a {
 #steam-img {
   width: 96px;
 }
+
+#rss-feeds {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px 24px;
+}
+
+.rss-entry {
+  background: radial-gradient(circle at top left, #393e46 10%, rgba(57, 62, 70, 0.4) 90%);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0);
+  transition: box-shadow .24s ease-in-out;
+  max-width: 900px;
+  padding: 0 10px;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.rss-entry:hover {
+  background: radial-gradient(circle at top left, #222831 10%, rgba(57, 62, 70, 0.4) 90%);
+  transition: box-shadow .24s ease-in-out;
+}
+
+.rss-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.rss-right {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 12px;
+  flex-shrink: 0;
+}
+
+.rss-right > img {
+  transition: height .24s ease-in-out;
+  height: 100%;
+  width: 30vw;
+  min-width: 250px;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+.rss-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  color: #c6d4df;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rss-title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: unset;
+  word-break: break-word;
+  flex: none;
+}
+
+.rss-date {
+  color: #909da7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.rss-content {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #a0afbb;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin-top: 8px;
+}
