@@ -45,9 +45,7 @@ function updateCGSLogo() {
   }
 }
 
-function init() {
-  updateCGSLogo()
-  update_scroll()
+function init(event) {
 
   var vidDefer = document.getElementsByTagName('iframe')
   for (var i = 0; i < vidDefer.length; i++) {
@@ -55,9 +53,12 @@ function init() {
       vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'))
     }
   }
+
+  update_scroll()
 }
 
 window.onload = init;
+window.addEventListener('load', init)
 window.addEventListener('resize', update_scroll)
 window.addEventListener('scroll', update_scroll)
 
@@ -69,7 +70,7 @@ function update_scroll (event) {
   var parallax_id = document.getElementById('parallax')
   var parallax_mobile_id = document.getElementById('parallax-mobile')
 
-  if (window.innerWidth < 1280) {
+  if (window.innerWidth < 800) {
     parallax_id.style.display = 'none';
     parallax_mobile_id.style.display = 'block';
   } else {
