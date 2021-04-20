@@ -68,7 +68,7 @@ function update_scroll (event) {
   var parallax_id = document.getElementById('parallax')
   var parallax_mobile_id = document.getElementById('parallax-mobile')
 
-  if (window.innerWidth < 800) {
+  if (window.innerWidth < 1280) {
     parallax_id.style.display = 'none';
     parallax_mobile_id.style.display = 'block';
   } else {
