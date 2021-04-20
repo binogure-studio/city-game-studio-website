@@ -46,7 +46,7 @@ body {
 }
 
 .text-color {
-  background-color:#0094c8;
+  background-color:#0092e9;
 }
 
 .no-max-width {
@@ -71,16 +71,16 @@ body {
   font-variant: small-caps;
   font-size: 20px;
   font-weight: bolder;
-  color: #e6f8ff;
+  color: #fefefe;
   text-decoration: none;
   text-align: center;
-  background-color: #e2c87d;
+  background-color: #fab700;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 6px;
-  border-bottom: 3px solid #ad891e;
+  border-bottom: 3px solid #896603;
 }
 
 a {
@@ -100,14 +100,6 @@ a {
   left: 0;
   top: 0px;
   text-align: center;
-}
-
-.parallax-1-layer-0 {
-  background-image: url("../img/parallax-1-layer-0.png");
-}
-
-.parallax-2-layer-0 {
-  background-image: url("../img/parallax-2-layer-0.png");
 }
 
 .parallax {
@@ -150,7 +142,7 @@ a {
 }
 
 .cover {
-  background-color: #0094c8;
+  background-color: #0092e9;
   text-align: justify;
   position: relative;
 
@@ -179,7 +171,7 @@ a {
 }
 .topicon {
   height: 48px;
-  padding: 14px 24px;
+  padding: 14px 24px 0px;
 }
 
 #cgs-logo {
@@ -189,6 +181,7 @@ a {
 
 .topnav-right {
   float: right;
+  padding: 0px 0px 0px 0px;
 }
 
 .topnav-right a {
@@ -196,7 +189,7 @@ a {
 }
 
 .topnav-right a:hover {
-  background: #0094c8;
+  background: #0092e9;
 }
 
 .divTable{
