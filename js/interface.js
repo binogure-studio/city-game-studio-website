@@ -57,32 +57,42 @@ function init() {
 }
 
 window.onload = init;
+window.addEventListener('resize', update_scroll)
+window.addEventListener('scroll', update_scroll)
 
-window.addEventListener('scroll', function (event) {
+function update_scroll (event) {
   var depth, i, layer, layers, len, movement, topDistance, translate3d;
   updateCGSLogo()
   topDistance = this.pageYOffset
   layers = document.querySelectorAll("[data-type='parallax']")
   var parallax_id = document.getElementById('parallax')
+  var parallax_mobile_id = document.getElementById('parallax-mobile')
 
-  if (topDistance > 1080) {
-    parallax_id.style.display = 'hidden';
+  if (window.innerWidth < 800) {
+    parallax_id.style.display = 'none';
+    parallax_mobile_id.style.display = 'block';
   } else {
-    parallax_id.style.display = 'block';
-  }
+     parallax_mobile_id.style.display = 'none';
 
-  for (i = 0, len = layers.length; i < len; i++) {
-    layer = layers[i];
-    depth = layer.getAttribute('data-depth')
-    movement = -(topDistance * depth)
-    translate3d = 'translate3d(0, ' + movement + 'px, 0)'
-    layer.style['-webkit-transform'] = translate3d
-    layer.style['-moz-transform'] = translate3d
-    layer.style['-ms-transform'] = translate3d
-    layer.style['-o-transform'] = translate3d
-    layer.style.transform = translate3d
+    if (topDistance > 1080) {
+      parallax_id.style.display = 'none';
+    } else {
+      parallax_id.style.display = 'block';
+    }
+
+    for (i = 0, len = layers.length; i < len; i++) {
+      layer = layers[i];
+      depth = layer.getAttribute('data-depth')
+      movement = -(topDistance * depth)
+      translate3d = 'translate3d(0, ' + movement + 'px, 0)'
+      layer.style['-webkit-transform'] = translate3d
+      layer.style['-moz-transform'] = translate3d
+      layer.style['-ms-transform'] = translate3d
+      layer.style['-o-transform'] = translate3d
+      layer.style.transform = translate3d
+    }
   }
-})
+}
 
 function validateEmail(email) {
   return /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/.test(email)
