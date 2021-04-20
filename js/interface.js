@@ -47,6 +47,7 @@ function updateCGSLogo() {
 
 function init() {
   updateCGSLogo()
+  update_scroll()
 
   var vidDefer = document.getElementsByTagName('iframe')
   for (var i = 0; i < vidDefer.length; i++) {
