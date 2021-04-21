@@ -81,6 +81,16 @@ h2 {
  * Basic elements.
 \* ---------------------------------------------------------- */
 
+em {
+  font-size: 1.0em;
+  font-family: "PT Sans Bold", Times, serif;
+  color: #013a5c;
+  font-style: normal;
+  background-color: #c7eaff55;
+  padding: 4px;
+  border-radius: 8px;
+}
+
 h1 {
   margin: 0;
 
