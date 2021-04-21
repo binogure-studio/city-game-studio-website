@@ -1,15 +1,24 @@
 @font-face {
-  font-family: SFPixelate;
-  src: url("../font/SFPixelate.ttf");
+  font-family: Bold;
+  src: url("../font/bold.ttf");
+}
+
+@font-face {
+  font-family: Normal;
+  src: url("../font/normal.ttf");
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: #e6f8ff;
-  font: 400 15px/1.8 "SFPixelate", sans-serif;
+  font: 400 15px/1.8 sans-serif;
   color: #e6f8ff;
   overflow-x: hidden;
+  background-image: url("../images/background-motif.png");
+  background-color: #e6f8ff;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Normal;
 }
 
 .title, .big-text, .text-content {
@@ -22,8 +31,9 @@ body {
 }
 
 .title {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 42px;
+  font-family: Bold;
+  font-weight: bolder;
 }
 
 .social-icon {
@@ -31,12 +41,14 @@ body {
 }
 
 .big-text {
-  font-size: 26px;
+  font-family: Bold;
+  font-size: 24px;
   text-align: center;
 }
 
 .subtitle {
   font-size: 25px;
+  font-family: Bold;
   font-weight: bold;
 }
 
@@ -69,7 +81,7 @@ body {
 .button {
   display: inline-block;
   font-variant: small-caps;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bolder;
   color: #fefefe;
   text-decoration: none;
@@ -84,7 +96,7 @@ body {
 }
 
 a {
-  font: 400 22px/1.8 "SFPixelate", sans-serif;
+  font: 400 22px/1.8 "Normal", sans-serif;
 }
 
 .parallax-1-layer-0, .parallax-2-layer-0 {
@@ -417,7 +429,7 @@ a {
   }
 
   a {
-    font: 300 12px/1.8 "SFPixelate", sans-serif;
+    font: 300 12px/1.8 "Normal", sans-serif;
   }
 
   .binogure-logo {
@@ -523,7 +535,8 @@ a {
   overflow: hidden;
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0);
   transition: box-shadow .24s ease-in-out;
-  max-width: 900px;
+  max-width: 75%;
+  min-width: 75%;
   padding: 0 10px;
   margin: auto;
   margin-top: 16px;
@@ -553,11 +566,11 @@ a {
 
 .rss-right > img {
   transition: height .24s ease-in-out;
-  height: 100%;
   width: 30vw;
-  min-width: 250px;
+  min-width: 128px;
   max-width: 350px;
   box-sizing: border-box;
+  object-fit: contain;
 }
 
 .rss-left {
