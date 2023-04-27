@@ -287,15 +287,23 @@
           </div>
         </div>
       </div>
+
       <div class="padit center-div">
         <div class="big-text">
           <h2>Subscribe to our mailing list</h2>
         </div>
+        <form id="newsletter-form" action="http://www.mailinglist.fr/mlbox/form" target="_blank" method="post">
         <div class="newsletter-input center-div">
-          <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email"
-            placeholder="NAME@EXAMPLE.COM" />
-          <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="SIGN UP" disabled />
+            <input type="hidden" name="ListID" value="7992">
+            <select name="action" style="display: none;">
+              <option value="subscribe">S'abonner</option>
+              <option value="unsubscribe">Se désabonner</option>
+            </select>
+            <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email"
+              placeholder="NAME@EXAMPLE.COM" />
+            <input type="submit" class="newsletter-button newsletter-submit" id="newsletter-submit" value="SIGN UP" disabled />
         </div>
+        </form>
         <div class='text-content center' id='subscribed'>
           <p>Check your email to confirm your subscription.</p>
         </div>

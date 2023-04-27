@@ -16,10 +16,10 @@ for (var index = 0; index < galleryNodes.length; ++index) {
 }
 
 var newsletter_email = document.getElementById('newsletter-email')
-var newsletter = document.getElementById('newsletter-submit')
+var newsletter_form = document.getElementById('newsletter-form')
 
 newsletter_email.oninput = emailAddressHandler
-newsletter.onclick = subscrireToNewsletter
+newsletter_form.addEventListener('submit', subscrireToNewsletter)
 
 modal.onclick = function() {
   if (!skipEvent) {
@@ -108,13 +108,16 @@ function emailAddressHandler() {
 }
 
 function ajaxHandler() {
+  console.log(this.responseText);
   // There is no need to check the status code since it _should_ always work
   if (this.readyState == 4) {
     document.getElementById('subscribed').style.display = 'block'
   }
 }
 
-function subscrireToNewsletter() {
+function subscrireToNewsletter(event) {
+  event.preventDefault();
+
   emailAddressHandler()
 
   var emailInput = document.getElementById('newsletter-email')
@@ -124,8 +127,12 @@ function subscrireToNewsletter() {
     var xhttp = new XMLHttpRequest()
 
     xhttp.onreadystatechange = ajaxHandler
-    xhttp.open('POST', 'https://www.freelists.org/cgi-bin/subscription.cgi', true)
+    xhttp.open('POST', newsletter_form.action, true)
+    xhttp.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-    xhttp.send('action=subscribe&list=binogure-studio&email=' + encodeURI(emailInput.value))
+    xhttp.setRequestHeader('Access-Control-Allow-Origin', '*')
+    xhttp.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+    xhttp.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type')
+    xhttp.send(new FormData(newsletter_form))
   }
 }
