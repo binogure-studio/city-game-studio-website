@@ -16,10 +16,12 @@ for (var index = 0; index < galleryNodes.length; ++index) {
 }
 
 var newsletter_email = document.getElementById('newsletter-email')
+var newsletter = document.getElementById('newsletter-submit')
 var newsletter_form = document.getElementById('newsletter-form')
 
 newsletter_email.oninput = emailAddressHandler
-newsletter_form.addEventListener('submit', subscrireToNewsletter)
+newsletter.onclick = subscrireToNewsletter
+// newsletter_form.addEventListener('submit', subscrireToNewsletter)
 
 modal.onclick = function() {
   if (!skipEvent) {
@@ -115,9 +117,7 @@ function ajaxHandler() {
   }
 }
 
-function subscrireToNewsletter(event) {
-  event.preventDefault();
-
+function subscrireToNewsletter() {
   emailAddressHandler()
 
   var emailInput = document.getElementById('newsletter-email')
@@ -127,12 +127,9 @@ function subscrireToNewsletter(event) {
     var xhttp = new XMLHttpRequest()
 
     xhttp.onreadystatechange = ajaxHandler
-    xhttp.open('POST', newsletter_form.action, true)
-    xhttp.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
-    xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-    xhttp.setRequestHeader('Access-Control-Allow-Origin', '*')
-    xhttp.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-    xhttp.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type')
+    xhttp.open('POST', 'http://www.mailinglist.fr/mlbox/form', true)
+    xhttp.setRequestHeader('Access-Control-Request-Headers', 'X-PINGOTHER, Content-Type')
+    xhttp.setRequestHeader('Access-Control-Request-Method', 'POST')
     xhttp.send(new FormData(newsletter_form))
   }
 }
