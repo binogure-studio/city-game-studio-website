@@ -21,7 +21,6 @@ var newsletter_form = document.getElementById('newsletter-form')
 
 newsletter_email.oninput = emailAddressHandler
 newsletter.onclick = subscrireToNewsletter
-// newsletter_form.addEventListener('submit', subscrireToNewsletter)
 
 modal.onclick = function() {
   if (!skipEvent) {
@@ -127,7 +126,7 @@ function subscrireToNewsletter() {
     var xhttp = new XMLHttpRequest()
 
     xhttp.onreadystatechange = ajaxHandler
-    xhttp.open('POST', 'http://www.mailinglist.fr/mlbox/form', true)
+    xhttp.open('POST', 'https://www.mailinglist.fr/mlbox/form', true)
     xhttp.setRequestHeader('Access-Control-Request-Headers', 'X-PINGOTHER, Content-Type')
     xhttp.setRequestHeader('Access-Control-Request-Method', 'POST')
     xhttp.send(new FormData(newsletter_form))
