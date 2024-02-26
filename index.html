@@ -982,6 +982,7 @@ City Game Studio is a game dev simulation that lets you create your own video ga
     jQuery(function($) {
       $("#rss-feeds").rss("https://store.steampowered.com/feeds/newshub/app/726840", {
         ssl: true,
+        host: "feedrapp.info",
         layoutTemplate: "{entries}",
         entryTemplate:
           `<div class="rss-entry">
