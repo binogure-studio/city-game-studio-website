@@ -122,6 +122,7 @@ City Game Studio is a game dev simulation that lets you create your own video ga
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-W4M96VG');</script>
+
   <!-- End Google Tag Manager -->
 </head>
 
@@ -975,32 +976,29 @@ City Game Studio is a game dev simulation that lets you create your own video ga
   </div>
 
   <script type="text/javascript" src="js/interface.js"></script>
-  <script src="js/rss.global.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
   <script>
-    window.onload = function() {
-      new RSS(
-        document.querySelector("#rss-feeds"),
-        "https://store.steampowered.com/feeds/newshub/app/726840/", {
-          ssl: false,
-          layoutTemplate: "{entries}",
-          entryTemplate:
-              `<div class="rss-entry">
-                <a href={url}>
-                  <div class="rss-container">
-                    <div class="rss-left">
-                      <div class="rss-title">{title}</div>
-                      <div class="rss-date">{date}</div>
-                      <div class="rss-content">{shortBodyPlain}...</div>
-                    </div>
-                    <div class="rss-right">
-                      {teaserImage}
-                    </div>
-                  </div>
-                </a>
-              </div>`
-        }
-      ).render();
-    };
+    jQuery(function($) {
+      $("#rss-feeds").rss("https://store.steampowered.com/feeds/newshub/app/726840", {
+        layoutTemplate: "{entries}",
+        entryTemplate:
+          `<div class="rss-entry">
+            <a href={url}>
+              <div class="rss-container">
+                <div class="rss-left">
+                  <div class="rss-title">{title}</div>
+                  <div class="rss-date">{date}</div>
+                  <div class="rss-content">{shortBodyPlain}...</div>
+                </div>
+                <div class="rss-right">
+                  {teaserImage}
+                </div>
+              </div>
+            </a>
+          </div>`
+      }).render();
+    })
   </script>
 </body>
 
