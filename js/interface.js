@@ -65,10 +65,14 @@ function update_scroll (event) {
   var parallax_mobile_id = document.getElementById('parallax-mobile')
 
   if (window.innerWidth < 800) {
+    if (window.scrollY > parallax_mobile_id.clientHeight) return;
+
     parallax_id.style.display = 'none';
     parallax_mobile_id.style.display = 'block';
   } else {
-     parallax_mobile_id.style.display = 'none';
+    if (window.scrollY > parallax_id.clientHeight) return;
+
+    parallax_mobile_id.style.display = 'none';
 
     if (topDistance > 1080) {
       parallax_id.style.display = 'none';
