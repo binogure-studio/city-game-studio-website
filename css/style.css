@@ -21,6 +21,40 @@ body {
   font-family: Normal;
 }
 
+.token-box {
+  width: 80%;
+  height: 50px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 32px;
+}
+
+#token {
+  width: calc(80% - 24px); /* Updated to account for icon width */
+  text-align: center;
+  color: #0092e9;
+}
+
+.copy-icon {
+  color: #0092e9;
+}
+
+.copied-text {
+  top: calc(100% + 24px); /* Position below the copy icon */
+  left: 50%;
+  transform: translateX(+10%);
+  font-size: 12px;
+  color: #0092e9;
+  opacity: 0; /* Initially hidden */
+  font-weight: bold; /* Make the text bold */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
 .title, .big-text, .text-content {
   padding: 5px 80px 5px 80px;
   text-align: justify;

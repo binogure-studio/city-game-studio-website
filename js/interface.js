@@ -93,3 +93,44 @@ function update_scroll (event) {
     }
   }
 }
+
+function copyToken() {
+  var tokenText = document.getElementById("token");
+  var range = document.createRange();
+  range.selectNode(tokenText);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  
+  // Show "Copied" text
+  var copiedText = document.querySelector('.copied-text');
+  copiedText.style.opacity = '1';
+  
+  // Hide "Copied" text after 1.5 seconds
+  setTimeout(function() {
+    copiedText.style.opacity = '0';
+  }, 1500);
+}
+
+// Function to get anchor parameter value
+function getAnchorParameter(name) {
+  var url = window.location.href;
+  var anchorIndex = url.indexOf('#');
+  if (anchorIndex === -1) return null;
+  var anchor = url.substring(anchorIndex + 1);
+  var params = anchor.split('&');
+  for (var i = 0; i < params.length; i++) {
+    var param = params[i].split('=');
+    if (param[0] === name) {
+      return decodeURIComponent(param[1]);
+    }
+  }
+  return null;
+}
+
+// Get access_token parameter from URL and update token field
+var accessToken = getAnchorParameter('access_token');
+if (accessToken) {
+  document.getElementById('token').textContent = accessToken;
+}
