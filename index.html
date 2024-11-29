@@ -295,13 +295,13 @@
         <div class="newsletter-container">
             <div class="newsletter-title">Subscribe to Our Newsletter</div>
             <div class="newsletter-description">If you're interested in testing it out, then sign up below to get exclusive access.</div>
-            <form class="sendfox-form" action="https://sendfox.com/form/3zv0de/19oqxy"  id="19oqxy" data-async="true" data-recaptcha="true">
-                <input type="email" id="sendfox_form_email" autocomplete="email" name="email" placeholder="Enter your email address" required>
-                <!-- no botz please -->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
-                <!-- /input -->
+            <form method="post" action="https://sendfox.com/form/3zv0de/19oqxy" class="sendfox-form" id="19oqxy" data-async="true" data-recaptcha="true">
+              <p><label for="sendfox_form_email">Email: </label><input type="email" id="sendfox_form_email" placeholder="Email" name="email" required /></p>
+              <!-- no botz please -->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
                 <input type="submit" value="Subscribe Now!">
             </form>
+            <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
