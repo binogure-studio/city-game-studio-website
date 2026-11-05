@@ -1,381 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>City Game Studio: run a video game company from 1976 to today</title>
+  <meta name="description" content="City Game Studio is a deep game dev tycoon set in a living city. Start in 1976 with one tiny office, hire a team, build your own consoles and buy out your rivals.">
   <meta name="author" content="Binogure Studio">
-  <meta name="keywords" content="City Game Studio, game dev tycoon, game dev simulation, video game company, management, development, best-selling games">
-  <meta name="description" content="City Game Studio is a simulation game in which you manage a video game company. Develop games, hire employees, and conquer the video game industry!">
-
-  City Game Studio is a game dev simulation that lets you create your own video game company, manage employees, and develop best-selling games
-  <!--  Essential META Tags -->
-  <meta name="bluesky:site" content="@binogure" />
-  <meta property="og:title" content="City Game Studio: A tycoon about game dev">
-  <meta property="og:description" content="A game development tycoon and a business simulation game where you replay the history of the gaming industry.">
-  <meta property="og:image" content="https://www.city-game-studio.com/img/background-playstore.png">
-  <meta property="og:url" content="https://www.city-game-studio.com">
-  <meta property="og:type" content="website">
-  <meta name="bluesky:card" content="summary_large_image">
-
-  <!--  Non-Essential, But Recommended -->
-  <meta name="bluesky:image:alt" content="A game development tycoon and a business simulation game where you replay the history of the gaming industry.">
-  <meta property="og:site_name" content="City Game Studio: A tycoon about game dev">
-
-
-  <title>City Game Studio - Build Your Dream Game Development Studio</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="canonical" href="https://www.city-game-studio.com/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/icon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#13243f">
 
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/newletter.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.city-game-studio.com/">
+  <meta property="og:site_name" content="City Game Studio">
+  <meta property="og:title" content="City Game Studio: a tycoon about game dev">
+  <meta property="og:description" content="Start a game studio in 1976. Take over the industry. A deep management sim about making games, built by one developer.">
+  <meta property="og:image" content="https://www.city-game-studio.com/assets/img/og.jpg">
+  <meta property="og:image:alt" content="City Game Studio key art: the logo, a yellow handheld console and an isometric game studio">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+  <link rel="preload" href="assets/fonts/quantico-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+
   <script type="application/ld+json">
-    [
-     {
-      "@context":"http://schema.org",
-      "@type":"VideoGame",
-      "name":"City Game Studio: A tycoon about game dev",
-      "description":"City Game Studio is a game dev tycoon mixed with a city builder game.",
-      "image":"https://www.city-game-studio.com/images/screenshot-1.jpg",
-      "author":{
-       "@type":"Person",
-       "name":"Binogure Studio"
-     },
-     "downloadUrl":"https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&utm_medium=cgs",
-     "screenshot":[
-      "https://www.city-game-studio.com/images/screenshot-01.jpg",
-      "https://www.city-game-studio.com/images/screenshot-02.jpg",
-      "https://www.city-game-studio.com/images/screenshot-03.jpg",
-      "https://www.city-game-studio.com/images/screenshot-04.jpg",
-      "https://www.city-game-studio.com/images/screenshot-05.jpg",
-      "https://www.city-game-studio.com/images/screenshot-06.jpg",
-      "https://www.city-game-studio.com/images/screenshot-07.jpg",
-      "https://www.city-game-studio.com/images/screenshot-08.jpg",
-      "https://www.city-game-studio.com/images/screenshot-09.jpg",
-      "https://www.city-game-studio.com/images/screenshot-10.jpg",
-      "https://www.city-game-studio.com/images/screenshot-11.jpg",
-      "https://www.city-game-studio.com/images/screenshot-12.jpg",
-      "https://www.city-game-studio.com/images/screenshot-13.jpg",
-      "https://www.city-game-studio.com/images/screenshot-14.jpg",
-      "https://www.city-game-studio.com/images/screenshot-15.jpg",
-      "https://www.city-game-studio.com/images/screenshot-16.jpg",
-      "https://www.city-game-studio.com/images/screenshot-17.jpg",
-      "https://www.city-game-studio.com/images/screenshot-18.jpg",
-      "https://www.city-game-studio.com/images/screenshot-19.jpg",
-      "https://www.city-game-studio.com/images/screenshot-20.jpg",
-      "https://www.city-game-studio.com/images/screenshot-21.jpg",
-      "https://www.city-game-studio.com/images/screenshot-22.jpg",
-      "https://www.city-game-studio.com/images/screenshot-23.jpg"
-    ],
-     "genre": [
-      "sandbox",
-      "indie",
-      "simulation",
-      "tycoon",
-      "fun",
-      "development"
-    ],
-     "sameAs": [
-      "https://www.youtube.com/channel/UCICwKQU-TUX24Ocm1Axsbeg"
-    ],
-     "trailer":{
-      "@type":"VideoObject",
-      "url":"https://www.youtube.com/watch?v=58vjwWFW4zo",
-      "contentUrl": "https://www.youtube.com/watch?v=58vjwWFW4zo",
-      "inLanguage":"en",
-      "name":"City Game Studio: A tycoon about game dev, Official trailer",
-      "description":"Steam: https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&utm_medium=cgs Website: https://www.city-game-studio.com/ City Game Studio: A tycoon about game dev, is a game dev tycoon game. Startup Company is a business simulation sandbox game. You are the founder of your video game company. The starting point belongs to you, in your garage, or think big instead of small by acquiring your first local. At the end of the day, your decisions will make your studio a success and will mark the Video Game History.",
-      "thumbnailUrl":"https://i9.ytimg.com/vi/58vjwWFW4zo/maxresdefault.jpg?sqp=CJiDruMF&rs=AOn4CLAGwxGqK-6j_34GYWnmihjKylQ0pA&time=1550549682201",
-      "uploadDate":"Feb 15, 2019"
-    },
-    "operatingSystem": [
-      "Linux",
-      "Windows",
-      "OSX"
-    ],
-    "applicationCategory": [
-      "Game"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "14"
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "City Game Studio: Your Game Dev Adventure Begins",
+    "alternateName": "City Game Studio",
+    "url": "https://www.city-game-studio.com/",
+    "description": "A game dev tycoon mixed with a city builder. Run a video game company from 1976 to today.",
+    "image": "https://www.city-game-studio.com/assets/img/og.jpg",
+    "author": { "@type": "Organization", "name": "Binogure Studio", "url": "https://www.binogure-studio.com" },
+    "publisher": { "@type": "Organization", "name": "Binogure Studio" },
+    "datePublished": "2021-08-24",
+    "gamePlatform": ["Windows", "macOS", "Linux"],
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "Game",
+    "genre": ["Simulation", "Management", "Tycoon", "Strategy"],
+    "playMode": "SinglePlayer",
+    "trailer": {
+      "@type": "VideoObject",
+      "name": "City Game Studio official trailer",
+      "description": "Official trailer for City Game Studio, a game dev tycoon.",
+      "embedUrl": "https://www.youtube.com/embed/58vjwWFW4zo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/58vjwWFW4zo/maxresdefault.jpg",
+      "uploadDate": "2019-02-15"
     },
     "offers": {
       "@type": "Offer",
+      "url": "https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/",
       "priceCurrency": "USD",
-      "price": "15.9"
+      "price": "19.99",
+      "availability": "https://schema.org/InStock"
     }
   }
-]
-</script>
+  </script>
 
-<!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-  w[l] = w[l] || []; w[l].push({
-    'gtm.start':
-    new Date().getTime(), event: 'gtm.js'
-  }); var f = d.getElementsByTagName(s)[0],
-  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-  'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-W4M96VG');</script>
-<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W4M96VG');</script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe title="Google tag manager" src="https://www.googletagmanager.com/ns.html?id=GTM-W4M96VG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-W4M96VG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <div class="topnav">
-    <div class="content center-div">
-      <img id='cgs-logo' class="topicon" src='img/logo.png' alt="City Game Studio: A tycoon about game dev logo" />
-      <div class="topnav-right">
-        <a href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&utm_medium=cgs" title="Steam store page" target="_blank" rel="noreferrer">
-          <img class="topicon" src='img/icon-steam.png' alt="Steam store page" />
-        </a>
-        <a href="https://binogure.itch.io/city-game-studio/" title="Itch.io store page" target="_blank" rel="noreferrer">
-          <img class="topicon" src='img/icon-itch.png' alt="Itch.io store page" />
-        </a>
-        <a href="https://www.gog.com/en/game/city_game_studio_your_game_dev_adventure_begins" title="GOG store page" target="_blank" rel="noreferrer">
-          <img class="topicon" src='img/icon-gog.png' alt="GOG store page" />
-        </a>
-        <a href="https://bsky.app/profile/binogure-studio.com" target="_blank" rel="noreferrer" title="Bluesky account">
-          <img class="topicon" src='img/icon-twitter.png' alt="Bluesky account" />
-        </a>
-        <a href="https://discord.gg/citygamestudio" target="_blank" rel="noreferrer" title="Official discord server">
-          <img class="topicon" src='img/icon-discord.png' alt="Official discord server" />
-        </a>
-      </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="City Game Studio, back to top">
+        <img src="assets/brand/logo-header.png" width="164" height="120" alt="City Game Studio">
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#career">The game</a>
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#your-way">Mods and streaming</a>
+        <a href="press.html">Press</a>
+      </nav>
+      <a class="btn btn-buy btn-small" data-cta="topbar" href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&amp;utm_medium=cgs&amp;utm_campaign=topbar" rel="noopener">
+        <img src="assets/img/icons/steam.png" width="24" height="24" alt="">Buy on Steam
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
+        <span class="menu-bars" aria-hidden="true"></span><span class="sr">Menu</span>
+      </button>
     </div>
-  </div>
+  </header>
 
-  <div class='content center-div'>
-    <div class='parallax' id='parallax'>
-      <div class='layer-bg parallax-layer' data-depth='0.10' data-type='parallax'></div>
-      <div class='layer-1 parallax-layer' data-depth='0.20' data-type='parallax'></div>
-      <div class='layer-2 parallax-layer' data-depth='0.50' data-type='parallax'></div>
-      <div class='layer-4 parallax-layer' data-depth='0.40' data-type='parallax'></div>
-      <div class='layer-3 parallax-layer' data-depth='0.85' data-type='parallax'></div>
-    </div>
+  <main id="main">
 
-    <div id='parallax-mobile'></div>
-    <div class="cover center-div">
-      <h1 class='title'>
-        Build your own video game empire with City Game Studio, the ultimate game development simulation. Hire talented employees, create hit games, and dominate the market!
-      </h1>
-      <div class="divTable center-div">
-        <div class="divTableBody">
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src='img/icon-steam.png' id="steam-img" alt="Steam store page" />
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <img class="hero-logo" src="assets/brand/logo.webp" width="944" height="689" alt="City Game Studio" fetchpriority="high">
+        <h1>Start a game studio in 1976. Take&nbsp;over the industry.</h1>
+        <p class="lede">A deep management sim where you run a video game company through the whole history of gaming. Make games, hire a team, open studios across a living city, build your own consoles and buy out your rivals.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-buy" data-cta="hero" href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&amp;utm_medium=cgs&amp;utm_campaign=hero" rel="noopener">
+            <img src="assets/img/icons/steam.png" width="28" height="28" alt="">Buy on Steam
+          </a>
+          <a class="btn btn-ghost" href="#trailer">Watch the trailer</a>
+        </div>
+        <p class="also">Also on <a href="https://www.gog.com/en/game/city_game_studio_your_game_dev_adventure_begins" rel="noopener">GOG</a> and <a href="https://binogure.itch.io/city-game-studio/" rel="noopener">itch.io</a>, DRM-free.</p>
+        <ul class="proof" aria-label="At a glance">
+          <li><span class="stars" aria-hidden="true">★★★★★</span> Very Positive on Steam</li>
+          <li>Steam Deck Verified</li>
+          <li>Windows, macOS, Linux</li>
+          <li>16 languages</li>
+        </ul>
+      </div>
+      <img class="hero-studio" src="assets/img/studio-new.webp" width="900" height="668" alt="" loading="lazy">
+    </section>
+
+    <!-- TRAILER BAND -->
+    <section class="band" id="trailer" aria-labelledby="trailer-title">
+      <div class="wrap band-inner">
+        <div class="video">
+          <button class="yt" type="button" data-yt="58vjwWFW4zo" aria-label="Play the City Game Studio trailer (loads YouTube)">
+            <img src="assets/video/busy-studio-poster.webp" width="800" height="450" alt="" loading="lazy">
+            <span class="yt-play" aria-hidden="true"></span>
+            <span class="yt-note">Plays from YouTube</span>
+          </button>
+        </div>
+        <div class="band-copy">
+          <h2 id="trailer-title">Nearly 70,000 studio bosses and counting</h2>
+          <p>City Game Studio left Early Access in 2021 and it keeps growing. A big update lands roughly every three months, shaped by what players ask for on Steam and Discord: studio directors, rival consoles, mods with balance checks, Twitch integration and a lot more.</p>
+          <p class="laurels">Official Selection at Comic-Con and DreamHack 2019. Featured in three Steam Daily Deals.</p>
+          <p><a class="link-light" href="https://store.steampowered.com/news/app/726840" rel="noopener">Read the latest update notes on Steam</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER TIMELINE -->
+    <section class="career" id="career" aria-labelledby="career-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="career-title">From one rented room to the whole industry</h2>
+          <p>Every playthrough follows the same arc, and no two end the same way. The city, your rivals and the market change every time.</p>
+        </header>
+
+        <ol class="road">
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">January 1976</p>
+              <h3>One room, one game</h3>
+              <p>You rent a tight little office and make your first game. Pick a genre and a theme, balance design against development, then release it on the consoles of the day.</p>
             </div>
-            <div class="divTableCell">
-              <img src='img/icon-gog.png' id="gog-img" alt="GOG store page" />
+            <figure class="stop-shot">
+              <video class="clip" muted loop playsinline preload="none" poster="assets/video/first-game-poster.webp" width="800" height="450" aria-label="Creating a game in 1979: picking a genre, a theme and the PC-8002 as the platform"><source src="assets/video/first-game.webm" type="video/webm"><source src="assets/video/first-game.mp4" type="video/mp4"></video>
+            </figure>
+          </li>
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">Your first hires</p>
+              <h3>Hire, furnish, repeat</h3>
+              <p>Artists first, then developers, then testers. Furnish every studio desk by desk, keep your people happy, and copy a layout you love to your next building.</p>
             </div>
-            <div class="divTableCell">
-              <img src='img/icon-itch.png' id="itch-img" alt="Itch store page" />
+            <figure class="stop-shot">
+              <video class="clip" muted loop playsinline preload="none" poster="assets/video/furnish-poster.webp" width="800" height="450" aria-label="Auto-furnishing your first empty studio with desks"><source src="assets/video/furnish.webm" type="video/webm"><source src="assets/video/furnish.mp4" type="video/mp4"></video>
+            </figure>
+          </li>
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">Your first hits</p>
+              <h3>Publishers take the lion's share</h3>
+              <p>Your games are good, but you don't have the fans to self-publish yet. Work with publishers until a string of hits lets you go solo, then write publishing contracts of your own.</p>
             </div>
+            <figure class="stop-shot">
+              <img src="assets/img/shots/s04-1280.webp" srcset="assets/img/shots/s04-640.webp 640w, assets/img/shots/s04-1280.webp 1280w" sizes="(min-width: 960px) 600px, 100vw" width="1280" height="720" alt="A publishing offer from a rival company, with budget, royalties and the target console" loading="lazy">
+            </figure>
+          </li>
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">Moving out</p>
+              <h3>Location, location, location</h3>
+              <p>The city is procedurally generated. Grab the neighborhood next to the convention center before a rival does, or reshape the city to fit your plans.</p>
+            </div>
+            <figure class="stop-shot">
+              <img src="assets/img/shots/s20-1280.webp" srcset="assets/img/shots/s20-640.webp 640w, assets/img/shots/s20-1280.webp 1280w" sizes="(min-width: 960px) 600px, 100vw" width="1280" height="720" alt="The isometric city map with your headquarters selected and its stats" loading="lazy">
+            </figure>
+          </li>
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">Scaling up</p>
+              <h3>Hand the studios to a director</h3>
+              <p>Hire a studio director, tell them the genre, platform, engine, audience and minimum review score, and they make the games, the updates and the ports while you run the company.</p>
+            </div>
+            <figure class="stop-shot">
+              <video class="clip" muted loop playsinline preload="none" poster="assets/video/studio-director-poster.webp" width="800" height="450" aria-label="Setting up a studio director: genre, engine, platform, minimum score and price strategy"><source src="assets/video/studio-director.webm" type="video/webm"><source src="assets/video/studio-director.mp4" type="video/mp4"></video>
+            </figure>
+          </li>
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">Going big</p>
+              <h3>Your engine, your console, your store</h3>
+              <p>Build or rent game engines. Design a console part by part, haggle with manufacturers over licenses and exclusivity, and run your own digital store.</p>
+            </div>
+            <figure class="stop-shot">
+              <img src="assets/img/shots/s11-1280.webp" srcset="assets/img/shots/s11-640.webp 640w, assets/img/shots/s11-1280.webp 1280w" sizes="(min-width: 960px) 600px, 100vw" width="1280" height="720" alt="A console maker offers an exclusivity deal for your game in exchange for a large payment" loading="lazy">
+            </figure>
+          </li>
+          <li class="stop">
+            <div class="stop-text">
+              <p class="stop-when">All the way to today</p>
+              <h3>Own the market</h3>
+              <p>Win Game of the Year, spy on rivals, poach their best people and buy them out. They fight back: rivals build their own consoles and buy each other up too.</p>
+            </div>
+            <figure class="stop-shot">
+              <video class="clip" muted loop playsinline preload="none" poster="assets/video/goty-poster.webp" width="800" height="450" aria-label="Your studio wins Game of the Year 2015"><source src="assets/video/goty.webm" type="video/webm"><source src="assets/video/goty.mp4" type="video/mp4"></video>
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="features-title">Everything you get to run</h2>
+          <p>Dozens of hours of content, and most systems connect to each other.</p>
+        </header>
+        <div class="kit">
+          <div class="kit-group kit-blue">
+            <h3>Make games</h3>
+            <ul>
+              <li>Mix genres and themes, unlock new genres as you go</li>
+              <li>Sequels, brands, remakes and ports to many consoles</li>
+              <li>Updates, DLCs and in-game purchases</li>
+              <li>Online games running on servers you set up</li>
+              <li>Marketing campaigns and convention booths</li>
+            </ul>
           </div>
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <a class="button" href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&utm_medium=cgs" title="Steam store page"  target="_blank" rel="noreferrer">
-                GET IT ON<br />STEAM
-              </a>
-            </div>
-            <div class="divTableCell">
-              <a class="button" href="https://www.gog.com/en/game/city_game_studio_your_game_dev_adventure_begins" title="GOG store page" target="_blank" rel="noreferrer">
-                GET IT ON<br />GOG
-              </a>
-            </div>
-            <div class="divTableCell">
-              <a class="button" href="https://binogure.itch.io/city-game-studio/" title="Itch.io store page" target="_blank" rel="noreferrer">
-                GET IT ON<br />ITCH
-              </a>
-            </div>
+          <div class="kit-group kit-yellow">
+            <h3>Run the company</h3>
+            <ul>
+              <li>Buy or rent buildings across the city</li>
+              <li>Hire staff, plan their schedules, train them on contracts</li>
+              <li>Studio directors who run whole studios for you</li>
+              <li>Design your company logo</li>
+              <li>Keep the banker happy, or else</li>
+            </ul>
+          </div>
+          <div class="kit-group kit-red">
+            <h3>Beat the competition</h3>
+            <ul>
+              <li>Spy on rivals and crack their games</li>
+              <li>Poach their best employees</li>
+              <li>Buy out companies, catalogs and studios</li>
+              <li>Negotiate console licenses and exclusivity</li>
+              <li>Chase the Game of the Year award</li>
+            </ul>
+          </div>
+          <div class="kit-group kit-green">
+            <h3>Build the hardware</h3>
+            <ul>
+              <li>Design your own consoles and handhelds</li>
+              <li>Production costs drop as your console sells</li>
+              <li>Send devkits to rival studios</li>
+              <li>Create, rent or sell game engines</li>
+              <li>Run your own digital store</li>
+            </ul>
           </div>
         </div>
       </div>
-      <h2 class='big-text'>
-        City Game Studio is a game development simulation game developed by Binogure Studio. In the game, you get to manage your own game development company, hire employees, and create your own video games. With its intuitive interface and realistic gameplay, City Game Studio offers an immersive gaming experience that is both engaging and educational.
-      </h2>
-      <div id="rss-feeds"></div>
-      <div class='video-responsive center-div shadow'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/58vjwWFW4zo?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
-      <div class="padit divTable center-div">
-        <div class="divTableBody">
-          <div class="divTableRow">
-            <div class="divTableCell text-content column-2">
-              As the owner of your own game development company, you'll need to manage all aspects of the business, from hiring employees to designing game concepts and marketing your products. You'll start off small, working from a small office with just a handful of employees, but as you create successful games and grow your company, you'll have the opportunity to expand your operation, hire more staff, and move into larger premises.
-            </div>
-            <div class="divTableCell text-content column-2">
-              One of the most exciting aspects of City Game Studio is the ability to design your own video games. You'll be able to choose from a range of genres and themes, and use a variety of tools to create engaging gameplay mechanics and stunning graphics. As you progress through the game, you'll unlock new features and technologies that will allow you to create even more complex and immersive games.
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
 
-      <div class="divTable center-div gallery">
-        <div class="divTableBody">
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src="images/screenshot-18.jpg" alt="Create outstanding game on glorious platforms" class="shadow">
-            </div>
-            <div class="divTableCell">
-              <img src="images/screenshot-23.jpg" alt="Work with competitors to publish games" class="shadow">
-            </div>
-          </div>
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src="images/screenshot-22.jpg" alt="Furnish your own studios" class="shadow">
-            </div>
-            <div class="divTableCell">
-              <img src="images/screenshot-13.jpg" alt="Announce your game early, market them on release" class="shadow">
-            </div>
-          </div>
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src="images/screenshot-03.jpg" alt="Publish game offers editions" class="shadow">
-            </div>
-            <div class="divTableCell">
-              <img src="images/screenshot-11.jpg" alt="Unlock new capacities over time" class="shadow">
-            </div>
-          </div>
-        </div>
+    <!-- SCREENSHOTS -->
+    <section class="shots" id="screenshots" aria-labelledby="shots-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="shots-title">Screenshots</h2>
+          <p>Tap any screenshot to see it full size.</p>
+        </header>
+        <ul class="gallery">
+          <li><button type="button" data-full="assets/img/shots/s09-1920.webp"><img src="assets/img/shots/s09-640.webp" width="640" height="360" alt="Choosing controllers for your own console" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s02-1920.webp"><img src="assets/img/shots/s02-640.webp" width="640" height="360" alt="Self-publishing a game with your own engine" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s17-1920.webp"><img src="assets/img/shots/s17-640.webp" width="640" height="360" alt="The genre tree, where you unlock new game genres" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s07-1920.webp"><img src="assets/img/shots/s07-640.webp" width="640" height="360" alt="Building a game engine feature by feature" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s03-1920.webp"><img src="assets/img/shots/s03-640.webp" width="640" height="360" alt="The list of platforms you can release on" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s21-1920.webp"><img src="assets/img/shots/s21-640.webp" width="640" height="360" alt="Running marketing campaigns" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s05-1920.webp"><img src="assets/img/shots/s05-640.webp" width="640" height="360" alt="The staff panel with skills and salaries" loading="lazy"></button></li>
+          <li><button type="button" data-full="assets/img/shots/s22-1920.webp"><img src="assets/img/shots/s22-640.webp" width="640" height="360" alt="Negotiating a console license with a manufacturer" loading="lazy"></button></li>
+        </ul>
       </div>
-      <div class="padit divTable center-div">
-        <div class="divTableBody">
-          <div class="divTableRow">
-            <div class="divTableCell text-content column-2">
-              In addition to game design, you'll also need to manage the day-to-day operations of your company. This includes everything from hiring employees and managing salaries to marketing your games and dealing with the competition. With so many different tasks to manage, City Game Studio is a challenging and rewarding game that will keep you engaged for hours on end.
-            </div>
-            <div class="divTableCell text-content column-2">
-              Overall, City Game Studio is a must-play game for anyone interested in game development or business management. With its immersive gameplay, cool graphics, and engaging storyline, it offers a gaming experience that is both fun and educational. So why not give it a try today and see if you have what it takes to build your own video game empire?
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
 
-      <div class="divTable center-div gallery">
-        <div class="divTableBody">
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src="images/screenshot-10.jpg" alt="Port games to other platforms" class="shadow">
-            </div>
-            <div class="divTableCell">
-              <img src="images/screenshot-08.jpg" alt="Create your own game engine" class="shadow">
-            </div>
-          </div>
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src="images/screenshot-04.jpg" alt="Become famous, gain more fans" class="shadow">
-            </div>
-            <div class="divTableCell">
-              <img src="images/screenshot-20.jpg" alt="Customize your studios" class="shadow">
-            </div>
-          </div>
-          <div class="divTableRow">
-            <div class="divTableCell">
-              <img src="images/screenshot-19.jpg" alt="Publish games on legendary consoles" class="shadow" />
-            </div>
-            <div class="divTableCell">
-              <img src="images/screenshot-15.jpg" alt="Manage the marketing campaigns" class="shadow" />
-            </div>
-          </div>
+    <!-- QUOTES -->
+    <section class="quotes" aria-labelledby="quotes-title">
+      <div class="wrap">
+        <h2 id="quotes-title" class="sr">What players and press say</h2>
+        <figure class="quote-big">
+          <blockquote cite="https://steamcommunity.com/id/AveraTi/recommended/726840/"><p>Game Dev Tycoon on steroids. 11/10</p></blockquote>
+          <figcaption><a href="https://steamcommunity.com/id/AveraTi/recommended/726840/" rel="noopener">AveraTi on Steam</a>, 27 hours played</figcaption>
+        </figure>
+        <div class="quote-row">
+          <figure class="quote">
+            <blockquote cite="https://steamcommunity.com/profiles/76561199213683221/recommended/726840/"><p>BEST GAMING TYCOON GAME THAT EXISTS!</p></blockquote>
+            <figcaption><a href="https://steamcommunity.com/profiles/76561199213683221/recommended/726840/" rel="noopener">SanatanAthma on Steam</a>, 46 hours played</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote cite="https://steamcommunity.com/id/beastgamingwarriors/recommended/726840/"><p>Really An Step Up From Game Dev Tycoon! Really Enjoying the game!</p></blockquote>
+            <figcaption><a href="https://steamcommunity.com/id/beastgamingwarriors/recommended/726840/" rel="noopener">Beast Gaming Warriors on Steam</a></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote><p>We start the game, we take care of his studios, we look up, and three hours have passed.</p></blockquote>
+            <figcaption>game-guide.fr</figcaption>
+          </figure>
+        </div>
+        <p class="quotes-more"><a href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&amp;utm_medium=cgs&amp;utm_campaign=reviews#app_reviews_hash" rel="noopener">Read all the reviews on Steam</a></p>
+      </div>
+    </section>
+
+    <!-- YOUR WAY -->
+    <section class="your-way" id="your-way" aria-labelledby="way-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="way-title">Play it your way</h2>
+          <p>Several difficulty levels, from a leisurely stroll to a permanent challenge, plus a sandbox mode where you set up every rule yourself.</p>
+        </header>
+        <div class="way-grid">
+          <article class="way">
+            <h3>Mods, with a balance check</h3>
+            <p>Grab mods from the Steam Workshop or make your own. The game analyzes every mod and tells you whether it adds content, bends the balance or breaks it, before you load it.</p>
+            <p class="way-links">
+              <a class="btn btn-ink btn-small" href="https://modmaker.city-game-studio.com/" rel="noopener">Open the Mod Maker</a>
+              <a class="text-link" href="https://steamcommunity.com/app/726840/workshop/" rel="noopener">Browse the Workshop</a>
+            </p>
+          </article>
+          <article class="way">
+            <h3>Made for streaming</h3>
+            <p>Connect your Twitch account and your viewers become your employees. Run polls to let chat name your games, studios and consoles. Hire them, or fire them.</p>
+            <p class="way-links">
+              <a class="btn btn-ink btn-small" href="https://docs.google.com/forms/d/e/1FAIpQLSe_feQzjAxbgOy3MP48wi7JlGxXbIn6iEZezcshswGL9ch3sg/viewform" rel="noopener">Request a key for your channel</a>
+              <a class="text-link" href="https://drive.google.com/drive/folders/1AgV70g_s8dBVKTudkfEP8yEUbmGi3CKT?usp=drive_link" rel="noopener">Download the press kit</a>
+            </p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="padit center-div newsletter">
-        <div class="newsletter-container">
-          <div class="newsletter-title">Subscribe to Our Newsletter</div>
-          <div class="newsletter-description">If you're interested in testing it out, then sign up below to get exclusive access.</div>
-          <form method="post" action="https://app.keila.io/forms/nfrm_6VdM4bRE" class="contact-form">
-            <label for="contact_email" style="display: none">Email: </label><input type="email" id="contact_email" placeholder="Email" name="contact[email]" required />
-            <!-- no botz please -->
-            <div class="flex flex-col">
-              <div class="h-captcha" data-sitekey="a1c5fab7-71df-4ea4-af75-87a3d07c61de">
-              </div>
-              <script async="" defer="" src="https://hcaptcha.com/1/api.js">
-              </script>
+    <!-- DEV -->
+    <section class="dev" aria-labelledby="dev-title">
+      <div class="wrap dev-inner">
+        <div class="dev-copy">
+          <h2 id="dev-title">Made by one person since 2016</h2>
+          <blockquote class="dev-quote">
+            <p>City Game Studio is the game I wish I had when I was a kid dreaming of making video games. It lets you experience forty years of gaming history, from a single-room studio in 1976 to a global empire. Every mechanic, every decision, every failure is something I lived through building this very studio.</p>
+            <footer>Xavier Sellier, Binogure Studio</footer>
+          </blockquote>
+          <p>Code, art, design and support are all Xavier, except the soundtrack by Conciliator. Most of what's in the game today started as a player suggestion, so come say hi.</p>
+          <p class="dev-links">
+            <a class="btn btn-ink btn-small" href="https://discord.gg/citygamestudio" rel="noopener"><img src="assets/img/icons/discord.png" width="22" height="22" alt="">Join the Discord</a>
+            <a class="text-link" href="https://bsky.app/profile/binogure-studio.com" rel="noopener">Follow on Bluesky</a>
+          </p>
+        </div>
+        <div class="newsletter">
+          <h3>Get the big updates by email</h3>
+          <p>One email when a major update or a new game ships. No spam.</p>
+          <form method="post" action="https://app.keila.io/forms/nfrm_6VdM4bRE" class="news-form">
+            <label for="contact_email">Email address</label>
+            <div class="news-row">
+              <input type="email" id="contact_email" name="contact[email]" autocomplete="email" placeholder="you@example.com" required>
+              <button class="btn btn-buy btn-small" type="submit">Subscribe</button>
             </div>
-            <input aria-hidden="true" autocomplete="off" name="h[url]" novalidate="novalidate" style="display: none"/>
-            <button type="submit">Subscribe Now</button>
+            <div class="h-captcha" data-sitekey="a1c5fab7-71df-4ea4-af75-87a3d07c61de"></div>
+            <input aria-hidden="true" tabindex="-1" autocomplete="off" name="h[url]" style="display:none">
           </form>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class='footer'>
-    <div class='content center-div'>
-      <div class="footnav-center padit center-text">
-        <p class="social-icons">
-          <a href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&utm_medium=cgs" title="Steam store page" target="_blank" rel="noreferrer">
-            <img class="social-icon" src='img/icon-steam.png' alt="Steam store page" />
-          </a>
-          <a href="https://www.gog.com/en/game/city_game_studio_your_game_dev_adventure_begins" title="GOG store page" target="_blank" rel="noreferrer">
-            <img class="social-icon" src='img/icon-gog.png' alt="GOG store page" />
-          </a>
-          <a href="https://binogure.itch.io/city-game-studio/" title="Itch.io store page" target="_blank" rel="noreferrer">
-            <img class="social-icon" src='img/icon-itch.png' alt="Itch.io store page" />
-          </a>
-          <a href="https://bsky.app/profile/binogure-studio.com" target="_blank" rel="noreferrer" title="Bluesky account">
-            <img class="social-icon" src='img/icon-twitter.png' alt="Bluesky account" />
-          </a>
-          <a href="https://discordapp.com/invite/citygamestudio" target="_blank" rel="noreferrer" title="Official discord server">
-            <img class="social-icon" src='img/icon-discord.png' alt="Official discord server" />
-          </a>
-        </p>
-        <a href="https://www.binogure-studio.com" target="_blank" rel="noreferrer" title="binogure studio official website">
-          <img src='images/binogure-studio-icon-nameless.png' class="binogure-logo" alt="Binogure Studio logo" /><br />
-        </a>
-        <span class="caps">
-          <a href="https://modmaker.city-game-studio.com/" target="_blank" rel="noreferrer" title="Mod Maker">Mod Maker</a>&nbsp;&nbsp;&nbsp;
-          <a href="mailto:contact@binogure-studio.com" target="_blank" rel="noreferrer" title="Official email address">contact@binogure-studio.com</a>&nbsp;&nbsp;&nbsp;
-          <a href="press.html" target="_blank" rel="noreferrer" title="Presskit">Press</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_feQzjAxbgOy3MP48wi7JlGxXbIn6iEZezcshswGL9ch3sg/viewform" target="_blank" rel="noreferrer" title="Grab a steam key">Key request</a>
-        </span>
-        <p class="copyright">Copyrights 2025 Binogure Studio - All Rights Reserved</p>
+    <!-- FINAL CTA -->
+    <section class="final" id="buy" aria-labelledby="buy-title">
+      <div class="skyline skyline-top" aria-hidden="true">
+        <div class="sky-layer sky-back"></div>
+        <div class="sky-layer sky-mid"></div>
+        <div class="sky-layer sky-front"></div>
       </div>
+      <div class="wrap final-inner">
+        <img class="final-logo" src="assets/brand/logo.png" alt="City Game Studio" loading="lazy">
+        <h2 id="buy-title">Your first office is ready</h2>
+        <div class="steam-widget">
+          <iframe src="https://store.steampowered.com/widget/726840/?utm_source=website&amp;utm_medium=cgs&amp;utm_campaign=widget" title="City Game Studio on Steam" loading="lazy" width="646" height="190"></iframe>
+        </div>
+        <p class="final-specs">87 achievements, trading cards, Steam Workshop, Cloud saves and Remote Play.</p>
+        <p class="final-alt">
+          <a class="btn btn-buy" data-cta="final" href="https://store.steampowered.com/app/726840/City_Game_Studio_Your_Game_Dev_Adventure_Begins/?utm_source=website&amp;utm_medium=cgs&amp;utm_campaign=final" rel="noopener"><img src="assets/img/icons/steam.png" width="28" height="28" alt="">Buy on Steam</a>
+          <a class="btn btn-light btn-small" href="https://www.gog.com/en/game/city_game_studio_your_game_dev_adventure_begins" rel="noopener"><img src="assets/img/icons/gog.png" width="22" height="22" alt="">Get it on GOG</a>
+          <a class="btn btn-light btn-small" href="https://binogure.itch.io/city-game-studio/" rel="noopener"><img src="assets/img/icons/itch.png" width="22" height="22" alt="">Get it on itch.io</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="footer-studio" href="https://www.binogure-studio.com" rel="noopener">
+        <img src="assets/brand/binogure.png" width="64" height="64" alt="">
+        <span>A Binogure Studio game</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="press.html">Press</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1AgV70g_s8dBVKTudkfEP8yEUbmGi3CKT?usp=drive_link" rel="noopener">Press kit download</a></li>
+        <li><a href="https://modmaker.city-game-studio.com/" rel="noopener">Mod Maker</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe_feQzjAxbgOy3MP48wi7JlGxXbIn6iEZezcshswGL9ch3sg/viewform" rel="noopener">Key request</a></li>
+        <li><a href="https://discord.gg/citygamestudio" rel="noopener">Discord</a></li>
+        <li><a href="https://bsky.app/profile/binogure-studio.com" rel="noopener">Bluesky</a></li>
+        <li><a href="https://www.youtube.com/c/Binogurestudio" rel="noopener">YouTube</a></li>
+        <li><a href="mailto:press@binogure-studio.com">press@binogure-studio.com</a></li>
+        <li><a href="mailto:contact@binogure-studio.com">contact@binogure-studio.com</a></li>
+        <li><a href="https://www.binogure-studio.com/privacy-en.html" rel="noopener">Privacy</a></li>
+      </ul>
+      <p class="copyright">© <span id="year">2026</span> Binogure Studio. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
 
-  <!-- The Modal -->
-  <div id="modal-gallery" class="modal">
-    <img class="modal-content" src="img/logo.png" id="modal-image" alt="City Game Studio: A tycoon about game dev logo" />
-  </div>
+  <dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-cap"></p>
+    <div class="lightbox-nav">
+      <button type="button" data-step="-1" aria-label="Previous screenshot">‹</button>
+      <button type="button" data-step="1" aria-label="Next screenshot">›</button>
+      <button type="button" class="lightbox-close" aria-label="Close">✕</button>
+    </div>
+  </dialog>
 
-  <script type="text/javascript" src="js/interface.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
-  <script>
-    jQuery(function($) {
-      $("#rss-feeds").rss("https://store.steampowered.com/feeds/newshub/app/726840", {
-        ssl: true,
-        host: "feedrapp.info",
-        layoutTemplate: "{entries}",
-        entryTemplate:
-        `<div class="rss-entry shadow">
-        <a href={url}>
-        <div class="rss-container">
-        <div class="rss-left">
-        <div class="rss-title">{title}</div>
-        <div class="rss-date">{date}</div>
-        <div class="rss-content">{shortBodyPlain}...</div>
-        </div>
-        <div class="rss-right">
-        {teaserImage}
-        </div>
-        </div>
-        </a>
-        </div>`
-      })
-    })
-  </script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </body>
 </html>
