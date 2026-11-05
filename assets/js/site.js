@@ -91,6 +91,59 @@
     }, { rootMargin: '-72px 0px 0px 0px' }).observe(heroLogo);
   }
 
+  // Latest Steam news, from the JSON the GitHub Action keeps up to date
+  var newsSection = document.getElementById('news');
+  var newsList = document.getElementById('news-list');
+  if (newsSection && newsList && window.fetch) {
+    fetch('assets/data/news.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        var items = data && data.items;
+        if (!items || !items.length) return;
+        items.forEach(function (n) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.className = 'news-card';
+          a.href = n.url;
+          a.rel = 'noopener';
+          a.dataset.cta = 'news';
+
+          var img = document.createElement('img');
+          img.src = n.image || 'assets/img/og.jpg';
+          img.alt = '';
+          img.loading = 'lazy';
+          img.onerror = function () { img.onerror = null; img.src = 'assets/img/og.jpg'; };
+
+          var body = document.createElement('div');
+          body.className = 'news-body';
+          var date = document.createElement('p');
+          date.className = 'news-date';
+          date.textContent = new Date(n.date * 1000).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+          var title = document.createElement('h3');
+          title.textContent = n.title;
+          var text = document.createElement('p');
+          text.className = 'news-excerpt';
+          text.textContent = n.excerpt;
+
+          body.append(date, title, text);
+          a.append(img, body);
+          li.append(a);
+          newsList.append(li);
+        });
+        newsSection.hidden = false;
+      })
+      .catch(function () {});
+  }
+  // Links to #news point to Steam until the section is filled
+  document.querySelectorAll('[data-news-link]').forEach(function (l) {
+    l.addEventListener('click', function (e) {
+      if (newsSection && newsSection.hidden) {
+        e.preventDefault();
+        window.open('https://store.steampowered.com/news/app/726840', '_blank', 'noopener');
+      }
+    });
+  });
+
   // Track store clicks in GTM
   document.querySelectorAll('a[href*="store.steampowered.com"], a[href*="gog.com"], a[href*="itch.io"]').forEach(function (a) {
     a.addEventListener('click', function () {

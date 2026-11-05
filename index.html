@@ -80,6 +80,7 @@
       <nav class="nav" id="nav" aria-label="Main">
         <a href="#career">The game</a>
         <a href="#features">Features</a>
+        <a href="#news" data-news-link>News</a>
         <a href="#screenshots">Screenshots</a>
         <a href="#your-way">Mods and streaming</a>
         <a href="press.html">Press</a>
@@ -132,8 +133,19 @@
           <h2 id="trailer-title">Nearly 70,000 studio bosses and counting</h2>
           <p>City Game Studio left Early Access in 2021 and it keeps growing. A big update lands roughly every three months, shaped by what players ask for on Steam and Discord: studio directors, rival consoles, mods with balance checks, Twitch integration and a lot more.</p>
           <p class="laurels">Official Selection at Comic-Con and DreamHack 2019. Featured in three Steam Daily Deals.</p>
-          <p><a class="link-light" href="https://store.steampowered.com/news/app/726840" rel="noopener">Read the latest update notes on Steam</a></p>
+          <p><a class="link-light" href="#news" data-news-link>See the latest updates</a></p>
         </div>
+      </div>
+    </section>
+
+    <!-- NEWS: filled from assets/data/news.json, updated by .github/workflows/steam-news.yml -->
+    <section class="news" id="news" aria-labelledby="news-title" hidden>
+      <div class="wrap">
+        <header class="news-head">
+          <h2 id="news-title">Latest updates</h2>
+          <a class="text-link" href="https://store.steampowered.com/news/app/726840" rel="noopener">All news on Steam</a>
+        </header>
+        <ul class="news-list" id="news-list"></ul>
       </div>
     </section>
 

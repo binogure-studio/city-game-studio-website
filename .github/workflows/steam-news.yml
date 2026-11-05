@@ -1,0 +1,43 @@
+name: Update Steam news
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - scripts/fetch-steam-news.mjs
+      - .github/workflows/steam-news.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: steam-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch the latest announcements
+        run: node scripts/fetch-steam-news.mjs
+
+      - name: Commit if the news changed
+        run: |
+          git add assets/data/news.json
+          if git diff --cached --quiet; then
+            echo "No new announcements"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update Steam news"
+          git push
