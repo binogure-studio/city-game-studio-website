@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Patch v1.29.0-rc6",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849192144179744",
+      "date": 1794420046,
+      "image": "https://clan.akamai.steamstatic.com/images/31019566/e637f24396804f9753e2716cac2e5175ddb871e4.png",
+      "excerpt": "Default version of the game, we want to make sure to have a chance to discover bugs and adjust the balancing, to give you the best game experience possible. Access the Unstable…"
+    },
+    {
       "title": "Four Games to Tell a Franchise’s Story",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643346853",
       "date": 1793988022,
@@ -13,13 +20,6 @@
       "date": 1793815227,
       "image": "https://clan.akamai.steamstatic.com/images/31019566/e637f24396804f9753e2716cac2e5175ddb871e4.png",
       "excerpt": "Default version of the game, we want to make sure to have a chance to discover bugs and adjust the balancing, to give you the best game experience possible. Access the Unstable…"
-    },
-    {
-      "title": "Finally Visible!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302239843",
-      "date": 1793383250,
-      "image": "https://clan.akamai.steamstatic.com/images/31019566/7f81f88f9eab9665645eff66da1ee84b7b4ba01e.gif",
-      "excerpt": "Hi everyone! It's a huge pleasure to see you all again! Because this time, you'll finally get to see what franchises look like. It's not quite finished yet. Some features are still…"
     }
   ]
 }
