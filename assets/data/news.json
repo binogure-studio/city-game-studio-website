@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "City Game Studio is part of Low Budget, Big Heart!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849192144181639",
+      "date": 1794463227,
+      "image": null,
+      "excerpt": "Hello everyone! Starting today and until November 16, City Game Studio is part of the Low Budget, Big Heart festival on Steam. And honestly, I don't think a festival name has ever…"
+    },
+    {
       "title": "Patch v1.29.0-rc6",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849192144179744",
       "date": 1794420046,
@@ -13,13 +20,6 @@
       "date": 1793988022,
       "image": "https://clan.akamai.steamstatic.com/images/31019566/a56027576a5f68fffc826a99954985460ddb280d.gif",
       "excerpt": "Hi everyone! Adding franchises is changing so many parts of the code that I dug up a bug dating back to 2019. Let me tell you all about it right away! So let's start with that old…"
-    },
-    {
-      "title": "Patch v1.29.0-rc5",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848557880480264",
-      "date": 1793815227,
-      "image": "https://clan.akamai.steamstatic.com/images/31019566/e637f24396804f9753e2716cac2e5175ddb871e4.png",
-      "excerpt": "Default version of the game, we want to make sure to have a chance to discover bugs and adjust the balancing, to give you the best game experience possible. Access the Unstable…"
     }
   ]
 }
