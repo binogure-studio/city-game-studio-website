@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "The ModMaker Gets a Makeover",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849827110433251",
+      "date": 1795197603,
+      "image": "https://clan.akamai.steamstatic.com/images/31019566/c9045197b6951bd300fbd29113079aef0aa5b2cb.gif",
+      "excerpt": "Hi everyone! Great week! I got to work a ton on the game and found quite a few bugs. Not just one or two, but almost ten! Let me tell you all about it! First, the biggest change…"
+    },
+    {
       "title": "Patch v1.29.0-rc7",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849827110425391",
       "date": 1795024817,
@@ -13,13 +20,6 @@
       "date": 1794592808,
       "image": "https://clan.akamai.steamstatic.com/images/31019566/c09cd669bac4d13232ee6d751082429d0780b72e.gif",
       "excerpt": "Hi everyone, I made good progress this week, and I'm happy to tell you that the first pass on franchises is now done. What's left is polishing it all, so let me tell you about it…"
-    },
-    {
-      "title": "City Game Studio is part of Low Budget, Big Heart!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849192144181639",
-      "date": 1794463227,
-      "image": null,
-      "excerpt": "Hello everyone! Starting today and until November 16, City Game Studio is part of the Low Budget, Big Heart festival on Steam. And honestly, I don't think a festival name has ever…"
     }
   ]
 }
