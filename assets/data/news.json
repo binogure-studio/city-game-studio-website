@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Patch v1.29.0-rc8",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852982347",
+      "date": 1795629625,
+      "image": "https://clan.akamai.steamstatic.com/images/31019566/e637f24396804f9753e2716cac2e5175ddb871e4.png",
+      "excerpt": "Default version of the game, we want to make sure to have a chance to discover bugs and adjust the balancing, to give you the best game experience possible. Access the Unstable…"
+    },
+    {
       "title": "Nominate City Game Studio for the Labor of Love Award",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849827110442634",
       "date": 1795456843,
@@ -13,13 +20,6 @@
       "date": 1795197603,
       "image": "https://clan.akamai.steamstatic.com/images/31019566/c9045197b6951bd300fbd29113079aef0aa5b2cb.gif",
       "excerpt": "Hi everyone! Great week! I got to work a ton on the game and found quite a few bugs. Not just one or two, but almost ten! Let me tell you all about it! First, the biggest change…"
-    },
-    {
-      "title": "Patch v1.29.0-rc7",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849827110425391",
-      "date": 1795024817,
-      "image": "https://clan.akamai.steamstatic.com/images/31019566/e637f24396804f9753e2716cac2e5175ddb871e4.png",
-      "excerpt": "Default version of the game, we want to make sure to have a chance to discover bugs and adjust the balancing, to give you the best game experience possible. Access the Unstable…"
     }
   ]
 }
