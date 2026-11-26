@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "BE A HERO, One game at a time!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852985231",
+      "date": 1795694572,
+      "image": "https://clan.akamai.steamstatic.com/images/31019566/8007f0754481e0cdd124fdf66d0d6e65d64c5e90.png",
+      "excerpt": "Hello everyone! From today until December 4, City Game Studio is part of BE A HERO, the Steam event of the Comic Con Stuttgart Gaming Zone. Fun fact: CGS was a Comic-Con official…"
+    },
+    {
       "title": "Patch v1.29.0-rc8",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852982347",
       "date": 1795629625,
@@ -13,13 +20,6 @@
       "date": 1795456843,
       "image": null,
       "excerpt": "Hey everyone! The Steam Awards are back, and nominations are open. Most categories are reserved for games released this year, but there's one category made for games like City Game…"
-    },
-    {
-      "title": "The ModMaker Gets a Makeover",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849827110433251",
-      "date": 1795197603,
-      "image": "https://clan.akamai.steamstatic.com/images/31019566/c9045197b6951bd300fbd29113079aef0aa5b2cb.gif",
-      "excerpt": "Hi everyone! Great week! I got to work a ton on the game and found quite a few bugs. Not just one or two, but almost ten! Let me tell you all about it! First, the biggest change…"
     }
   ]
 }
