@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "The Home Stretch Before the Big Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852990733",
+      "date": 1795802449,
+      "image": "https://clan.akamai.steamstatic.com/images/31019566/b39726269e104f2fab652bcbdb889dc75fa97d5b.gif",
+      "excerpt": "Hi everyone! I hope you're doing well! I've been pretty productive: I actually worked a ton on the mod maker last week, and this week I made quite a few small changes to make the…"
+    },
+    {
       "title": "BE A HERO, One game at a time!",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852985231",
       "date": 1795694572,
@@ -13,13 +20,6 @@
       "date": 1795629625,
       "image": "https://clan.akamai.steamstatic.com/images/31019566/e637f24396804f9753e2716cac2e5175ddb871e4.png",
       "excerpt": "Default version of the game, we want to make sure to have a chance to discover bugs and adjust the balancing, to give you the best game experience possible. Access the Unstable…"
-    },
-    {
-      "title": "Nominate City Game Studio for the Labor of Love Award",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849827110442634",
-      "date": 1795456843,
-      "image": null,
-      "excerpt": "Hey everyone! The Steam Awards are back, and nominations are open. Most categories are reserved for games released this year, but there's one category made for games like City Game…"
     }
   ]
 }
